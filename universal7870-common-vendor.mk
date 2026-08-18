@@ -6,11 +6,13 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7870-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml
+    vendor/samsung/universal7870-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
+    vendor/samsung/universal7870-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so
 
 PRODUCT_PACKAGES += \
     libfloatingfeature \
-    libaptX_encoder
+    libaptX_encoder \
+    libsecnativefeature
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/universal7870-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
